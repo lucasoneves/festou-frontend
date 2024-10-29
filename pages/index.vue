@@ -1,14 +1,11 @@
 <template>
   <div>
-    <h2>Últimos eventos</h2>
+    <h2 class="font-bold text-2xl mb-6">Últimos eventos</h2>
     <EventList />
   </div>
 </template>
 
 <script setup>
-definePageMeta({
-  layout: 'default'
-})
 </script>
 
 <style lang="scss" scoped>

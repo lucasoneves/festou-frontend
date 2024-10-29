@@ -1,24 +1,15 @@
 <template>
-  <ul>
-    <li v-for="event in events" :key="event.id">
-      <nuxt-link :to="`/events/${event.id}`">{{ event.name }}</nuxt-link>
-    </li>
-  </ul>
+  <div class="event-list grid grid-cols-auto-fill gap-5">
+    <div v-for="productItem in products">
+      <EventCard :product="productItem" />
+    </div>
+  </div>
 </template>
 
-<script>
-export default {
-  name: 'EventList',
-  data() {
-    return {
-      events: [{ id: 1, name: "Festa do João" }, { id: 1, name: "Festa junina da família" }],
-    };
-  },
-  mounted() {
-  },
-}
+<script setup>
+const { data: products } = await useFetch(`https://fakestoreapi.com/products`);
 </script>
 
 <style scoped>
-/* Estilos para a lista de eventos */
+
 </style>

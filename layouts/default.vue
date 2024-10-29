@@ -1,7 +1,9 @@
 <template>
-  <Header />
-  <slot />
-  <Footer />
+  <MainHeader/>
+  <main class="p-6 max-w-screen-lg m-auto">
+    <slot />
+  </main>
+  <MainFooter />
 </template>
 
 <script setup>
