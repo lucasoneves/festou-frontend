@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-2xl font-bold mb-6">Eventos</h2>
+    <h2 class="text-4xl font-bold mb-6">Eventos</h2>
     <EventList />
   </div>
 </template>
