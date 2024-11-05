@@ -2,7 +2,7 @@
   <div>
     <h2 class="text-4xl font-bold mb-6">Eventos</h2>
     <EventList />
-    <div>{{ data }}</div>
+    <div>Resultado: {{ data }}</div>
   </div>
 </template>
 
@@ -11,7 +11,7 @@
     layout: 'default'
   })
 
-  const { data } = await useFetch('/api/events');
+  const { data } = await useFetch('/api/currency/BRL');
 
 </script>
 
