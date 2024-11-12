@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex gap-6 my-6">
+  <ul class="flex gap-2 sm:gap-6 my-6 flex-wrap">
     <!-- <NuxtLink
       v-for="item in navItems"
       :to="`/events/${id}`"
@@ -10,9 +10,11 @@
     <NuxtLink
       v-for="link in navItems"
       :to="`/events/${id}${link.path}`"
-      class="py-2 px-6"
-      active-class="bg-[var(--meadow-dark)]	rounded-full text-white"
-      >{{ link.title }}</NuxtLink
+      class="p-2 px-6 bg-[var(--ballerina)] rounded-full"
+      active-class="bg-[var(--meadow-dark)]	text-white"
+    >
+    {{ link.title }}
+    </NuxtLink
     >
   </ul>
 </template>
@@ -21,7 +23,7 @@
 defineProps(["id"]);
 
 const navItems = reactive([
-{
+  {
     path: "/",
     title: "Informações",
   },

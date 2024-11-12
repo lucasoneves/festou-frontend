@@ -10,7 +10,7 @@
       >
     </div>
 
-    <h2 class="font-bold text-4xl mb-6">Eventos encerrados</h2>
+    <h2 class="font-bold text-4xl mb-6 mt-24">Eventos encerrados</h2>
     <EventList />
     <div class="text-center my-8 mx-auto">
       <NuxtLink

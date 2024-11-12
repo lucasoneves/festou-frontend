@@ -1,11 +1,11 @@
 <template>
   <div class="bg-white p-6 shadow-md rounded-lg min-h-lvh mb-72">
     <div class="flex flex-col gap-8">
-      <img :src="eventInfo.image" alt="" class="rounded-lg max-h-80 object-cover object-center"  />
+      <img :src="eventInfo.image" alt="" class="rounded-lg max-h-80 object-cover object-center w-full"  />
       <div class="info gap-10">
         <h2 class="text-4xl font-bold">{{ eventInfo.title }}</h2>
-        <p class="mt-4"><strong>{{  eventInfo.date }}</strong> às {{ eventInfo.startsAt }}</p>
-        <p>Endereço: {{ eventInfo.location }}</p>
+        <p class="mt-4">Data: <strong>{{  eventInfo.date }}</strong> às {{ eventInfo.startsAt }}</p>
+        <p>Local: {{ eventInfo.location }}</p>
         <EventNav :id="eventInfo.id" />
         <!-- <span class="block mb-2">{{ eventInfo.date }} - {{ eventInfo.startsAt }}</span>
         <span class="block mb-2">{{ eventInfo.location }}</span>

@@ -1,6 +1,6 @@
 <template>
   <MainHeader :is-logged="true" :user="user" />
-  <main class="p-6 max-w-screen-lg m-auto">
+  <main class="p-6 max-w-screen-lg my-20 mx-auto">
     <slot />
   </main>
   <MainFooter />

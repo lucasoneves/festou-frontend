@@ -1,5 +1,5 @@
 <template>
-  <header class="p-6 flex gap-6 justify-between shadow-md bg-white">
+  <header class="p-6 flex gap-6 justify-between shadow-md bg-white fixed w-full top-0">
     <h1 class="font-bold">Festa.app</h1>
     <nav class="flex gap-6 justify-between">
       <nuxt-link to="/">Home</nuxt-link>
