@@ -1,6 +1,6 @@
 <template>
   <header class="p-6 flex gap-6 justify-between shadow-md bg-white">
-    <h1 class="font-bold">Festou</h1>
+    <h1 class="font-bold">Festa.app</h1>
     <nav class="flex gap-6 justify-between">
       <nuxt-link to="/">Home</nuxt-link>
       <nuxt-link to="/events">Eventos</nuxt-link>
