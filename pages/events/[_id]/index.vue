@@ -1,6 +1,4 @@
 <template>
-  <EventLayout>
-    <slot />
     <p>
       A Festa Junina da Vila Alegre é o evento anual mais aguardado da região,
       celebrando as tradições e a cultura caipira em uma noite repleta de cores,
@@ -54,10 +52,13 @@
       <strong>Status do Evento:</strong> Planejamento em andamento, com todos os
       fornecedores e barraquinhas confirmados.
     </p>
-  </EventLayout>
 </template>
 
-<script setup></script>
+<script setup>
+definePageMeta({
+  layout: "events"
+})
+</script>
 
 <style lang="scss" scoped>
 h2 {

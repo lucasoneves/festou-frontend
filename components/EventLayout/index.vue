@@ -18,12 +18,9 @@
         </p>
         <p>Local: {{ eventInfo.location }}</p>
         <EventNav :id="eventInfo.id" />
-        <!-- <span class="block mb-2">{{ eventInfo.date }} - {{ eventInfo.startsAt }}</span>
-        <span class="block mb-2">{{ eventInfo.location }}</span>
-        <p>{{ eventInfo.description }}</p> -->
-        <slot></slot>
       </div>
     </div>
+    <slot />
   </div>
 </template>
 

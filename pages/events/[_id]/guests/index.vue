@@ -1,5 +1,4 @@
 <template>
-  <EventLayout>
     <h2>Total: 48</h2>
     <h3>Presença confirmada: 30</h3>
     <div v-for="user in users" class="flex gap-20 items-center shadow-sm mb-4 bg-[var(--clear)] px-4 py-2 rounded-lg">
@@ -20,10 +19,12 @@
         <button>Remover</button>
       </div>
     </div>
-  </EventLayout>
 </template>
 
 <script setup>
+definePageMeta({
+  layout: "events"
+})
 import { guestsData } from '~/utils/data/guests';
 
 const users = reactive(guestsData)

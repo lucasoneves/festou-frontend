@@ -1,12 +1,5 @@
 <template>
   <ul class="flex gap-2 sm:gap-6 my-6 flex-wrap">
-    <!-- <NuxtLink
-      v-for="item in navItems"
-      :to="`/events/${id}`"
-      class="py-2 px-6"
-      active-class="bg-[var(--meadow-dark)]	rounded-full text-white"
-      >Informações</NuxtLink
-    > -->
     <NuxtLink
       v-for="link in navItems"
       :to="`/events/${id}${link.path}`"

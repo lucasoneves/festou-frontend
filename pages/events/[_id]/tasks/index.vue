@@ -1,14 +1,11 @@
 <template>
-  <EventLayout>
-    <h2>Tarefas</h2>
-  </EventLayout>
-
+  <h2>Tarefas</h2>
 </template>
 
 <script setup>
-
+definePageMeta({
+  layout: "events"
+})
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
