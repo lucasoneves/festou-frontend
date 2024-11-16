@@ -2,10 +2,10 @@
   <MainHeader :is-logged="true" :user="user" />
   <main class="p-6 max-w-screen-lg my-20 mx-auto">
     <EventLayout>
-    <slot />
-  </EventLayout>
+      <slot />
+    </EventLayout>
   </main>
-  
+
   <MainFooter />
 </template>
 

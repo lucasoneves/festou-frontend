@@ -30,7 +30,7 @@ console.log("ROTA", route);
 const id = route.params._id;
 
 const eventInfo = ref({
-  id: id,
+  id: '1',
   title: "Festa junina 2024",
   date: "20/06/2024",
   location: "Rua Apeninos, 205",
